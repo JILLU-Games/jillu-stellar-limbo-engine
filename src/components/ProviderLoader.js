@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Box, Typography, LinearProgress, Fade } from "@mui/material";
+import { Box, Typography, LinearProgress, Fade, keyframes } from "@mui/material";
+
+const logoAnimation = keyframes`
+  0% { transform: translateY(0px) scale(1); opacity: 0.85; filter: drop-shadow(0 0 0px rgba(0,210,255,0)); }
+  50% { transform: translateY(-5px) scale(1.03); opacity: 1; filter: drop-shadow(0 0 15px rgba(0,210,255,0.6)); }
+  100% { transform: translateY(0px) scale(1); opacity: 0.85; filter: drop-shadow(0 0 0px rgba(0,210,255,0)); }
+`;
 
 export default function ProviderLoader({ onLoaded }) {
   const [progress, setProgress] = useState(0);
@@ -63,6 +69,7 @@ export default function ProviderLoader({ onLoaded }) {
               height: { xs: 50, sm: 70 },
               mb: 1,
               objectFit: "contain",
+              animation: `${logoAnimation} 2.5s ease-in-out infinite`,
             }}
           />
           <Typography

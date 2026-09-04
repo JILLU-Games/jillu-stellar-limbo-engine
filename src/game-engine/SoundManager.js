@@ -134,6 +134,37 @@ export class SoundManager {
   // ==========================================
 
   /**
+   * Premium 'bet locked in' / bet placed trigger.
+   * Plays a crisp, short confirmation double-chirp.
+   */
+  playBetPlaced() {
+    if (this.isMuted) return;
+    const ctx = this.getAudioContext();
+    if (!ctx) return;
+
+    try {
+      const now = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(1200, now);
+      osc.frequency.exponentialRampToValueAtTime(1800, now + 0.05);
+      osc.frequency.setValueAtTime(1800, now + 0.05);
+      osc.frequency.exponentialRampToValueAtTime(2400, now + 0.1);
+
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+
+      osc.connect(gain);
+      gain.connect(this.masterGain || ctx.destination);
+
+      osc.start(now);
+      osc.stop(now + 0.15);
+    } catch (e) {}
+  }
+
+  /**
    * Tactile UI button click trigger.
    */
   playClick() {

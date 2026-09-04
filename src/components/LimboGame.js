@@ -403,7 +403,7 @@ export function LimboGame({ setMyBets, myBets = [] }) {
 
   // Primary Bet Button Action
   const handlePlayClick = () => {
-    soundManager.playClick();
+    soundManager.playBetPlaced();
     if (tabIndex === 0) {
       if (!isRolling) {
         engine
