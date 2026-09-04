@@ -1,0 +1,6 @@
+{
+  "name": "Stellar Limbo | JILLU",
+  "description": "Stellar Limbo - Premium casino crash game by JILLU. Features highly responsive HTML5 Canvas rocket animation, Provably Fair PRNG engine, and professional UI polish.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

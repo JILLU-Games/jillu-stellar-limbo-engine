@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "short_name": "Stellar Limbo",
+  "name": "Stellar Limbo | JILLU",
+  "description": "Premium casino crash game by JILLU. Fast-paced, provably fair rocket multiplier action.",
+  "icons": [
+    {
+      "src": "JILLU-ICON.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#0b0f17",
+  "background_color": "#0b0f17"
+}
