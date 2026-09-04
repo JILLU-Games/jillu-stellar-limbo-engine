@@ -1,8 +1,6 @@
-# STELLAR LIMBO by JILLU
+# JILLU Stellar Limbo Engine
 
-![JILLU Premium Games](https://img.shields.io/badge/Provider-JILLU-00d2ff?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)
-
-Welcome to **Stellar Limbo**, a premium casino "crash/limbo" module built for commercial iGaming integration.
+An open-source frontend game engine showcasing interactive UI, animations, and modern web game development patterns.
 
 ## 1. Game Overview
 Stellar Limbo is a fast-paced, high-adrenaline multiplier game where players set a target multiplier and bet on a rocket's trajectory. With a seamless user interface, responsive controls, and immersive audio-visuals, the game is designed to maximize player retention and engagement.
